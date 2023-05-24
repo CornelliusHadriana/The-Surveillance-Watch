@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Home Page</title>
+        <style>
+            a:hover {
+              text-decoration: underline;
+            }
+            img {
+                filter: saturate(70%);
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            body { 
+                padding-top: 65px; 
+            }
+            .footer {
+                height: 150px;
+                width: auto;
+                display: flex;
+            }
+            .nav-link:hover {
+              text-decoration: underline;
+            }
+            #footer-links {
+                justify-content: center;
+                height: auto;
+                width: auto;
+                padding: 65px;
+            }
+            #homepage-body-top {
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                height: 600px;
+                display: flex;
+                flex-direction: column;
+            }
+            #homepage-body-top::before {
+                content: "";
+                background-image: url(https://media.wired.com/photos/5a21eb099138596298922068/16:9/w_1758,h_989,c_limit/NSAcampus-FA-96263974.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                filter: brightness(15%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+            #homepage-body-album {
+                display: flex;
+                height: auto;
+                width: auto;
+                justify-content: center;
+                vertical-align: center;
+                
+            }
+            #homepage-card-row {
+                display: flex;
+            }
+            #p1 {
+                width: 60%;
+                height: auto;
+                margin-left: 20%;
+                padding: 15px;
+                
+            }
+            #jn-button {
+              background-color: #e21a41; 
+              color: white;
+            }
+            #jn-button:hover {
+              background-color: #f06c85;
+            }
+        </style>
+    </head>
+    <body> 
+        <div class="container-fluid">
+            <nav class="navbar fixed-top navbar-dark" style="background-color: #161618; border: 1px solid; border-color: #414143;">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="index.html"><span class="navbar-brand mb-0 h1">The Surveillance Watch</span></a>
+                    </li>
+                </ul>
+                <ul class="nav justify-content">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:white" href="about.html">About Our Mission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:white" href="surveillance-programs-nav.html">Surveillance Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:white" href="surveillance-tactics-nav.html">Surveillance Tactics</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="homepage-body-top" class="container-fluid text-white">
+            <h1>Shedding Light on Modern Surveillance</h1>
+            <br>
+            <p>Join us on this vital journey as we shine a light on the evolving world of surveillance. </p>
+            <br>
+            <a href="jn.html"><button type="button" class="btn" id="jn-button">Join Our Newsletter</button></a>
+        </div>
+        
+        <div class="album py-5 bg-light">
+          <div class="container">
+            <h2>Hottest Topics</h2>
+            <br>
+            <hr style="border: 0.5px solid;">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" style="height: 200px;" src="https://i.guim.co.uk/img/media/afc049c13d0f9a82d7f8fc3b19e2886b3c09bb37/0_273_6448_3869/master/6448.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=77c50b29406f859cbc43b2af7a2f13e0" alt="Phone call image (source: The Guardian)">
+                  <div class="card-body">
+                    <h5 class="card-title">MAINWAY</h5>
+                    <p class="card-text">The NSA's framework for collecting and recording the phone call records of millions of Americans.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="MAINWAY.html"><button type="button" class="btn btn-outline-secondary">Learn more</button></a>
+                      </div>
+                      <small class="text-muted">3/5/2023</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" style="height: 200px;" src="https://i.guim.co.uk/img/media/60704d7c3dbd279e3b60429f69d248d7bf95a9ef/0_61_8192_4915/master/8192.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=923b2998096bfa5499d3a9dfd58220ea" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Stellar Wind</h5>
+                    <p class="card-text">Learn more about the warrantless surveillance program started under the George W. Bush administration.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="stellar-wind.html"><button type="button" class="btn btn-outline-secondary">Learn more</button></a>
+                      </div>
+                      <small class="text-muted">4/2/2023</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" style="height: 200px;" src="https://npr.brightspotcdn.com/dims4/default/fe26d5b/2147483647/strip/true/crop/1500x1001+0+0/resize/880x587!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2013%2F01%2F28%2Fchina3_custom-ef0a511cd17bdc22f2869b582014f9702bcfd7d3.jpg" alt="Surveillance in Tiananmen Square (source: Japan Times)">
+                  <div class="card-body">
+                    <h5 class="card-title">Golden Shield Project</h5>
+                    <p class="card-text">The Chinese government's mass internet and information surveillance and censorship program.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="golden-shield.html"><button type="button" class="btn btn-outline-secondary">Learn more</button></a>
+                      </div>
+                      <small class="text-muted">3/7/2023</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" style="height: 200px;" src="https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/RXFJPFHWEAI6VBPXLFARRCUYZU.jpg" alt="The Washington Post">
+                  <div class="card-body">
+                    <h5 class="card-title">Corporate Surveillance</h5>
+                    <p class="card-text">Learn about how Big Tech monitors and handles the data from users, clients, and employees.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="corporate-surveillance.html"><button type="button" class="btn btn-outline-secondary">Learn more</button></a>
+                      </div>
+                      <small class="text-muted">4/1/2023</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" style="height: 200px;" src="https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/4/2018/06/AE-GettyImages-536200716.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Wiretapping</h5>
+                    <p class="card-text">Learn about how your phone and internet based conversations can be intercepted and recorded.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="wiretapping.html"><button type="button" class="btn btn-outline-secondary">Learn more</button></a>
+                      </div>
+                      <small class="text-muted">5/7/2023</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" style="height: 200px;" src="https://c.files.bbci.co.uk/assets/7e402a01-da9a-4952-8b12-27a8838e98b5" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Spyware & Stalkerware</h5>
+                    <p class="card-text">Learn more about how your devices can be invasively compromised by malicious software.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="ss.html"><button type="button" class="btn btn-outline-secondary">Learn more</button></a>
+                      </div>
+                      <small class="text-muted">5/10/2023</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="justify-content: center; padding: 20px; width: 100%; height: auto; background-color: #161618;">
+          <div class="card text-center text-white" style="width: auto; padding-top: 50px; padding-bottom: 50px; background-color: #161618;">
+            <div class="card-body">
+              <h2 class="card-title">Surveillance Tactics</h2>
+              <p class="card-text">Learn about how third-parties access your data and monitor your activity.</p>
+              <a href="surveillance-tactics-nav.html"><button type="button" class="btn btn-light">Learn more</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div role="main" class="container" style="padding-top: 50px; padding-bottom: 50px;">
+            <div class="jumbotron" style="background-color: white;">
+              <h1>Our Mission</h1>
+              <p class="lead">Governments around the world use unprecedented technology to collect and control gigabytes of information for good or for bad. We believe in fostering awareness and accountability. </p>
+              <a class="btn btn-lg btn-primary bg-dark" href="about.html" role="button" style="border-color:#414143">About Us &raquo;</a>
+            </div>
+        </div>            
+
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #161618; height: 100px; border-color:#414143; border: 1px solid;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="jn.html">Join our newsletter<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About our mission</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tc.html">Terms of conditions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="privacy.html">Privacy policy</a>
+                </li>
+                <li class="nav-item dropup">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact Us</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown10">
+                    <a class="dropdown-item" href="#">Join our team</a>
+                    <a class="dropdown-item" href="#">Report a problem</a>
+                    <a class="dropdown-item" href="#">Give us feedback</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
